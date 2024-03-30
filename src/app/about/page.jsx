@@ -9,7 +9,7 @@ export default function AboutPage() {
             <h1 className="text-gray-900 font-medium text-4xl text-center">
                 About us
             </h1>
-            <div className=" flex items-center justify-center gap-4 text-gray-700 mt-4 mb-20">
+            <div className=" flex items-center  text-xs lg:text-sm justify-center gap-2 lg:gap-4 text-gray-700 mt-4 mb-8 lg:mb-20">
                 <MdHome className="text-xl" />
                 <span>Home</span>
                 <FaAngleRight />

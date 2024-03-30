@@ -3,14 +3,16 @@ import Image from "next/image";
 export default function AboutHistory() {
     return (
         <div>
-            <div className="flex gap-20">
-                <div className="font-medium">
-                    <span className=" text-gray-700   ">About us</span>
-                    <h2 className="text-gray-900 font-semibold text-3xl">
+            <div className="flex gap-2 lg:gap-20 flex-col lg:flex-row">
+                <div className=" font-medium">
+                    <span className=" text-gray-700  hidden lg:bock ">
+                        About us
+                    </span>
+                    <h2 className="text-gray-900 font-semibold text-xl lg:text-3xl">
                         History
                     </h2>
                 </div>
-                <p className="text-gray-500">
+                <p className="text-xs md:text-sm lg:text-base text-justify font-medium text-gray-500">
                     In 1962, the Southern Michigan Mutual Insurance Company
                     celebrated it&apos;s 100th year in continuous operation and
                     was presented with a plaque by the State of Michigan as a
@@ -21,10 +23,10 @@ export default function AboutHistory() {
                 src="/images/couple-on-car.png"
                 height={496}
                 width={1232}
-                className="w-full object-cover my-12"
+                className="w-full object-cover my-4 lg:my-12 rounded-sm lg:rounded-[10px] "
                 alt="people"
             />
-            <div className="space-y-5 text-gray-500 font-medium">
+            <div className="space-y-3 lg:space-y-5 text-justify text-gray-500 text-xs md:text-sm lg:text-base font-medium">
                 <p>
                     In 2013, Southern Michigan Mutual Insurance Company became
                     USA Underwriters. The name may have changed, but the

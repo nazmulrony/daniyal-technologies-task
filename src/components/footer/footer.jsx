@@ -5,7 +5,7 @@ import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import MobileFooterLinks from "./mobile-footer-link";
 export default function Footer() {
     return (
-        <div className=" mt-10">
+        <div className="mt-4 lg:mt-10 ">
             <div className="bg-gray-800 py-8 l lg:py-16">
                 <div className="hidden  container md:px-8 mx-auto lg:grid grid-cols-3 gap-y-12 text-white">
                     <div>
