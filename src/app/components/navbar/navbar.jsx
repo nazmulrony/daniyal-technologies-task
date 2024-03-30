@@ -21,7 +21,7 @@ export default function Navbar() {
                         src="/images/logo.png"
                         height={100}
                         width={200}
-                        className="w-[90px] object-contain"
+                        className="w-[82px] lg:w-[90px] object-contain"
                     />
                 </Link>
 
@@ -30,7 +30,7 @@ export default function Navbar() {
                     setVisibleMenu={setVisibleMenu}
                 />
 
-                <div className="text-dark hidden lg:flex gap-8 items-center font-semibold">
+                <div className="text-dark hidden lg:flex gap-8 items-center font-medium">
                     <Link href="/">Home</Link>
                     <Link
                         href="/about"
@@ -40,10 +40,10 @@ export default function Navbar() {
                     </Link>
                     <Link href="/">Contact</Link>
                     <Link href="/">Policyholder Portal</Link>
-                    <Button>Report a claim</Button>
+                    <Button>Report a Claim</Button>
                 </div>
 
-                <div className="absolute right-4 lg:hidden">
+                <div className="absolute right-6 lg:hidden">
                     {!visibleMenu && (
                         <HiMenuAlt3
                             className="text-xl"
