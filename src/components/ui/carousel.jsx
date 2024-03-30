@@ -1,11 +1,10 @@
 "use client";
-import * as React from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
+import * as React from "react";
 
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const CarouselContext = React.createContext(null);
 
@@ -28,6 +27,7 @@ const Carousel = React.forwardRef(
             plugins,
             className,
             children,
+            autoplay = false,
             ...props
         },
         ref
@@ -38,7 +38,7 @@ const Carousel = React.forwardRef(
                 axis: orientation === "horizontal" ? "x" : "y",
                 loop: true,
             },
-            // [Autoplay({ delay: 4000 })],
+
             plugins
         );
         const [canScrollPrev, setCanScrollPrev] = React.useState(true);
@@ -265,8 +265,8 @@ CarouselNext.displayName = "CarouselNext";
 export {
     Carousel,
     CarouselContent,
-    CarouselItem,
     CarouselDots,
-    CarouselPrevious,
+    CarouselItem,
     CarouselNext,
+    CarouselPrevious,
 };
