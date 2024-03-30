@@ -2,11 +2,12 @@ import { HiClock } from "react-icons/hi2";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import MobileFooterLinks from "./mobile-footer-link";
 export default function Footer() {
     return (
         <div className=" mt-10">
-            <div className="bg-gray-800 py-10 l lg:py-16">
-                <div className="container md:px-8 mx-auto grid grid-cols-3 gap-y-12 text-white">
+            <div className="bg-gray-800 py-8 l lg:py-16">
+                <div className="hidden  container md:px-8 mx-auto lg:grid grid-cols-3 gap-y-12 text-white">
                     <div>
                         <div className="flex flex-col max-w-[18.75rem]">
                             <h3 className="text-xl font-semibold mb-2">
@@ -107,16 +108,27 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+                <MobileFooterLinks />
             </div>
-            <div className="bg-gray-100 py-4 text-sm">
-                <div className="container mx-auto md:px-8 flex justify-between items-center">
-                    <p>
+            <div className="bg-gray-800 text-white lg:text-gray-900 lg:bg-gray-100 py-4 text-sm">
+                <div className="container mx-auto md:px-8 flex flex-col lg:flex-row justify-between items-center">
+                    <p className="flex flex-col lg:flex-row">
                         Copyright 2022 USA Underwriters{" "}
-                        <span className="font-semibold cursor-pointer">
-                            | Privacy Policy
-                        </span>{" "}
-                        <span className="font-semibold cursor-pointer">
-                            | Terms of Use
+                        <span className="hidden lg:flex ">
+                            <span className="font-semibold cursor-pointer">
+                                | Privacy Policy
+                            </span>{" "}
+                            <span className="font-semibold cursor-pointer">
+                                | Terms of Use
+                            </span>
+                        </span>
+                        <span className="lg:hidden text-center mb-4">
+                            <span className=" cursor-pointer">
+                                Privacy Policy
+                            </span>{" "}
+                            <span className=" cursor-pointer">
+                                | Terms of Use
+                            </span>
                         </span>
                     </p>
                     <span>
