@@ -26,6 +26,7 @@ export default function Navbar() {
                     />
                 </Link>
 
+                {/* This components rendered the mobile nav-links */}
                 <MobileNavLinks
                     visibleMenu={visibleMenu}
                     setVisibleMenu={setVisibleMenu}

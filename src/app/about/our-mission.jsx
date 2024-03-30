@@ -1,6 +1,6 @@
 export default function OurMission() {
     return (
-        <div className="flex flex-col lg:flex-row justify-between mt-10 lg:mt-20 mb-14">
+        <div className="flex flex-col lg:flex-row justify-between mt-8 lg:mt-20 lg:mb-14">
             <div className="font-medium">
                 <span className=" text-gray-700   ">Believe</span>
                 <h2 className="text-primary font-semibold text-3xl uppercase">
