@@ -1,20 +1,21 @@
 "use client";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import MobileNavLinks from "./mobile-nav-links";
-import { Button } from "@/components/ui/button";
-import { usePathname, useSearchParams } from "next/navigation";
-import { cn } from "@/lib/utils";
 
 export default function Navbar() {
+    //state to control the  mobile nav-links visibility
     const [visibleMenu, setVisibleMenu] = useState(false);
     const pathName = usePathname();
     return (
-        <div className="py-2 lg:py-4 shadow sticky top-0 z-[100] ">
-            <div className="container mx-auto flex justify-center lg:justify-between items-center relative">
+        <div className="py-2 lg:py-4 shadow sticky top-0 z-[100] bg-white">
+            <div className="container md:px-8 mx-auto flex justify-center lg:justify-between items-center relative">
                 <Link href="/">
                     <Image
                         alt="logo"

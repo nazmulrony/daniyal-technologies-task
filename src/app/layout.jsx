@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={cn(inter.className, "flex flex-col min-h-screen")}>
                 <Navbar />
-                <div className="container flex-1 mx-auto py-10">{children}</div>
+                <div className="container flex-1 mx-auto py-4 md:px-8 lg:py-8">
+                    {children}
+                </div>
                 <Footer />
             </body>
         </html>
